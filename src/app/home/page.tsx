@@ -19,18 +19,26 @@ export default function Home() {
   const products = [
     {
       id: 1,
-      name: 'Earthen Bottle',
+      name: 'SIMPAN by DPLK Indolife',
       href: '#',
-      price: 'safasfasdas dasf SFlSAF asfs',
-      imageSrc: 'https://tailwindui.com/plus-assets/img/ecommerce-images/category-page-04-image-card-01.jpg',
-      imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
+      desc: 'As insurance company brand powered by DPLK Indolife, SIMPAN focusing on a retiring fund savings. Participant savings will get maximum growth through the fund placement, such as deposits at the largest Bank and debentures with AAA rating.',
+      imageSrc: '/images/simpan4.png',
+      imageAlt: '/images/paranje.png',
+    },
+    {
+      id: 1,
+      name: 'Paranje',
+      href: '#',
+      desc: 'Paranje focusing on chicken broiler partnership under the brand of Paranje5000 & Paranje500. Content Management System (CMS) is a web platform was built to manage all data partner on a national scale and record all partner activity.',
+      imageSrc: '/images/paranje2.png',
+      imageAlt: '/images/paranje.png',
     },
     {
       id: 2,
-      name: 'Nomad Tumbler',
+      name: 'Jaga Hujan Dashboard',
       href: '#',
-      price: '$35',
-      imageSrc: 'https://tailwindui.com/plus-assets/img/ecommerce-images/category-page-04-image-card-02.jpg',
+      desc: 'As insurance company brand powered by JagaDiri Insurance, JagaHujan is a fare protection of trip services uses the Grab or Gojek transportation when it rains.',
+      imageSrc: '/images/jaga-hujan3.png',
       imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
     }
   ]
@@ -66,10 +74,10 @@ export default function Home() {
                   <img
                     alt={product.imageAlt}
                     src={product.imageSrc}
-                    className="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-7/8"
+                    className="aspect-square w-full rounded-lg bg-gray-200 object-contain group-hover:opacity-75 xl:aspect-7/8"
                   />
                   <h3 className={`mt-4 ${styles.colorWhite}`}>{product.name}</h3>
-                  <p className={`mt-1 ${styles.colorWhite}`}>{product.price}</p>
+                  <p className={`mt-1 ${styles.colorWhite}`}>{product.desc}</p>
                 </a>
               </div>
             ))}
